@@ -1,0 +1,52 @@
+
+button {
+ width: 40%;
+ margin-left: 30%;
+ margin-right: 30%;
+ background: white;
+ border: none;
+}
+button:hover{
+  cursor: pointer;
+}
+
+.characterContainer {
+ display: flex;
+ justify-content: space-between;
+ flex-direction: column;
+ background: lightblue;
+ font-weight: bolder;
+ width: 60%;
+ margin: auto;
+ border: 20px solid #ffcb05;
+ border-radius: 5%;
+}
+
+.image_container {
+ display: flex;
+ justify-content: space-between;
+}
+
+.gender_text {
+ display: flex;
+ justify-content: space-around;
+}
+.img {
+ border: black;
+}
+
+h1 {
+ text-align: center;
+}
+
+.main_image{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.pokebutton{
+  width: 100px;
+  height: 100px;
+}
+
