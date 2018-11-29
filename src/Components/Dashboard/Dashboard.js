@@ -28,7 +28,9 @@ export default class Dashboard extends Component {
                 })
             })
     }
+
     render() {
+
         let showPokemon = () => {
             return <Product
                 name={this.state.inventory.name}
@@ -43,15 +45,22 @@ export default class Dashboard extends Component {
 
         }
 
-
-
-        return (
-            <div>
+        if (this.state.front_female && this.state.back_female) {
+            return <div>
                 <img className="main_image" src="https://vignette.wikia.nocookie.net/nonsensopedia/images/1/17/PoK%C3%A9MoN.jpg/revision/latest/scale-to-width-down/640?cb=20111109211622" alt="" />
-                <button onClick={() => this.pokeClick()}><img className="pokebutton" src="https://p5.zdassets.com/hc/theme_assets/1051539/200290428/PGoPlus_Press.gif"/></button>
+                <button onClick={() => this.pokeClick()}><img className="pokebutton" src="https://p5.zdassets.com/hc/theme_assets/1051539/200290428/PGoPlus_Press.gif" alt="" /></button>
                 {showPokemon()}
 
             </div>
+        }
+        return (
+            <div>Missing female images...
+
+                <img className="main_image" src="https://vignette.wikia.nocookie.net/nonsensopedia/images/1/17/PoK%C3%A9MoN.jpg/revision/latest/scale-to-width-down/640?cb=20111109211622" alt="" />
+                <button onClick={() => this.pokeClick()}><img className="pokebutton" src="https://p5.zdassets.com/hc/theme_assets/1051539/200290428/PGoPlus_Press.gif" alt="" /></button>
+                {showPokemon()}
+            </div>
+            
         )
     }
 }

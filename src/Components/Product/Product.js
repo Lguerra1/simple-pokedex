@@ -4,7 +4,6 @@ export default function Product(props) {
 
     return (
 
-
         <div>
             <div className="characterContainer">
                 <p>Name: {props.name}</p>
@@ -26,11 +25,7 @@ export default function Product(props) {
 
                     </div>
                 </div>
-
             </div>
-
-
-
         </div>
 
     )
